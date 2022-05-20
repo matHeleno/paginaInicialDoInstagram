@@ -40,3 +40,44 @@ body{
 .instagram-phone img{
     height: 50rem;
 }
+
+.instagram-continue{
+    display: flex;
+    align-items: center; /*horizontal*/
+    justify-content: space-around; /*vertical*/
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #FA0874, #FFC446);
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgrey;
+}
+
+/*Seletor CSS que pega os filhos do elemento, o número indica qual filho é pela ordem*/
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.instagram-logo{
+    height: 3rem
+}
+/*imagem não exceder o tamanho da div para fora, tudo que saí de quadrado indo para fora fica escondido*/
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img{
+    height: 8rem;
+}
