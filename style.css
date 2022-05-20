@@ -5,7 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 body{
@@ -15,6 +15,7 @@ body{
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
 }
 
 /*O que faz o display flex?
@@ -27,6 +28,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: start;
+    width: 60%;
     height: 100vh;
 }
 
@@ -58,7 +60,7 @@ body{
     background-image: linear-gradient(to bottom, #FA0874, #FFC446);
     width: 100%;
     padding: 1.3rem 0;
-    border: 1px solid lightgrey;
+    border: 1px solid #000
 }
 
 /*Seletor CSS que pega os filhos do elemento, o número indica qual filho é pela ordem*/
@@ -117,7 +119,7 @@ Para imagem não exceder o tamanho da div para fora, tudo que saí de quadrado i
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1.3rem
+    padding: 1rem
 }
 
 .app-download{
@@ -132,4 +134,30 @@ Para imagem não exceder o tamanho da div para fora, tudo que saí de quadrado i
 
 .app-download:nth-child(2){
     background-image: url(./img/googleplay-button.png);
+}
+
+/*media queries*/
+
+@media(max-width: 1024px){
+    .instagram-wrapper{
+        width: 90%
+    }
+}
+
+@media(max-width: 740px){
+    body {
+        background-image: linear-gradient(to bottom, #FA0874, #FFC446);
+    }
+
+    .instagram-wrapper{
+        width: 90%;
+    }
+
+    .instagram-phone{
+        display: none;
+    }
+
+    .instagram-continue{
+        width: 100%;
+    }
 }
